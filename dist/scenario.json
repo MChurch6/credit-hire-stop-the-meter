@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-the-meter-v1",
+  "title": "Stop the Meter",
+  "claimRef": "CH-24791",
+  "claimant": "Alex Morgan",
+  "vehicle": "2022 BMW 320d M Sport automatic",
+  "dailyRate": 295,
+  "jurisdiction": "England & Wales",
+  "version": "1.0",
+  "artifacts": [
+    {
+      "id": "fnol",
+      "title": "First notification of loss",
+      "kind": "FNOL",
+      "from": "Claims intake · Monday 14:30",
+      "unlock": 0,
+      "body": "CLAIM CH-24791\n\nCollision: Monday, 08:15, at a roundabout in the claimant’s home town.\nInsured vehicle struck the rear of Alex Morgan’s BMW 320d M Sport automatic (2022).\n\nInitial account: the claimant slowed with traffic. The insured appears primarily responsible; a full signed account has not yet been obtained. Cover checks are in progress.\n\nDamage: rear bumper, boot floor and parking sensors. Driveability requires engineer confirmation.\nUse: private use and a 25-mile commute each way.\n\nContact route: claimant is currently unrepresented; the CHO coordinates hire. Confirm the appropriate contact route before any intervention.\n\nYour task: establish liability, need, vehicle requirements and repair progress in parallel. This is a fictional training file.",
+      "variants": []
+    },
+    {
+      "id": "cho",
+      "title": "Hire notification & agreement",
+      "kind": "EMAIL",
+      "from": "Northway Mobility · Hire desk",
+      "unlock": 0,
+      "body": "To: Motor claims team\nSubject: Morgan / CH-24791 — vehicle on hire\n\nOur client requires an equivalent replacement vehicle following the accident involving your insured. Hire commenced today. Please confirm liability.\n\nAGREEMENT EXTRACT\nVehicle: BMW 330i M Sport automatic\nDaily credit hire charge: £295, inclusive for this simulation\nDelivery / collection: £120 total\nAdditional waiver: £270 total, subject to separate evidence of terms and necessity\nMileage: stated as unlimited\nCredit terms: payment deferred pending recovery\n\nThe existence of this agreement does not determine the recoverable damages. No real agreement or personal data is held in this app.",
+      "variants": []
+    },
+    {
+      "id": "need",
+      "title": "Claimant mobility statement",
+      "kind": "CALL NOTE",
+      "from": "Alex Morgan · Mobility enquiry",
+      "unlock": 1,
+      "body": "“I need a car for work. I commute around 25 miles each way. My wife also uses our car to collect our two children.”\n\nHousehold second car: spouse’s vehicle.\nSpouse works three days each week and needs that car.\nAlex attends site five days each week.\nPublic transport: approximately 1 hour 45 minutes each way; usual car trip is 40 minutes.\n\nEnquiry outstanding: precise working patterns, vehicle availability, school commitments and any other practical alternative. Owning a second car does not establish that it is reasonably available.",
+      "variants": [
+        {
+          "flag": "investigated",
+          "body": "Your early enquiry reached Alex before the next work shift.\n\nAlex commutes 25 miles each way, five days a week. His spouse needs the household second car for work three days a week and school collection. Public transport takes about 1 hour 45 minutes compared with 40 minutes by car.\n\nThere is a practical conflict in vehicle use. Record the working patterns and collection times; do not treat ownership alone as availability."
+        }
+      ]
+    },
+    {
+      "id": "type",
+      "title": "Replacement vehicle requirements",
+      "kind": "STATEMENT",
+      "from": "Alex Morgan · Follow-up",
+      "unlock": 2,
+      "body": "Own vehicle: BMW 320d M Sport automatic.\nSupplied vehicle: BMW 330i M Sport automatic.\n\n“They said it was basically the same car.”\n\nRelevant needs: automatic transmission, space for two children and normal luggage, commuting and school journeys. No declared specialist business use or accessibility adaptation.\n\nOutstanding: why this replacement class was supplied, local availability and any relevant differences in terms. Neither the badge nor engine size alone answers reasonableness.",
+      "variants": []
+    },
+    {
+      "id": "offer",
+      "title": "Alternative mobility offer",
+      "kind": "OFFER",
+      "from": "Insurer mobility team",
+      "unlock": 3,
+      "body": "A suitable automatic saloon is available locally at an insurer cost of £72 per day. Delivery can be arranged; confirm actual slot and claimant requirements before promising it.\n\nOffer details to explain and document: class and transmission, delivery arrangements, insurance, excess, mileage, cost to the claimant and how long provision can continue. In this exercise the insurer funds the vehicle directly.\n\nRecord the specific offer, receipt and response. Use the appropriate contact route and avoid pressure. An offer does not automatically defeat the existing hire claim.",
+      "variants": []
+    },
+    {
+      "id": "offer-response",
+      "title": "Claimant response to intervention",
+      "kind": "EMAIL",
+      "from": "Alex Morgan · Mobility response",
+      "unlock": 4,
+      "body": "No suitable, fully explained offer has been recorded as received. Alex remains in credit hire and is unsure who is managing the repair.\n\nA generic letter, unsuitable vehicle or demand to stop hire is not treated as effective intervention in this exercise.",
+      "variants": [
+        {
+          "flag": "intervention",
+          "body": "“Thank you for explaining the automatic replacement and the delivery arrangements. I understand that you would pay for it. I want to check the position with Northway before I change vehicles.”\n\nAlex remains in credit hire pending advice. Keep the offer open, record the reasons for declining and follow up respectfully. No automatic reduction of recoverable damages is assumed.\n\nThe £72 figure is the insurer’s supply cost, not the basic hire rate or an automatic cap."
+        }
+      ]
+    },
+    {
+      "id": "engineer",
+      "title": "Engineer’s initial assessment",
+      "kind": "REPORT",
+      "from": "Ellis Vehicle Assessing · Inspection",
+      "unlock": 4,
+      "body": "Vehicle currently assessed as not roadworthy due to rear structure damage.\nRepair estimate: £11,800.\nPre-accident value: £18,500.\nRequired: rear bumper, crash bar, boot floor section and parking sensors.\nEstimated repair duration: 18 working days, subject to authority and parts.\n\nThis is an initial estimate, not an agreed reasonable hire period. Obtain actual start and completion dates, parts lead times and the repair-versus-total-loss assessment. The estimate alone does not decide economic repairability.",
+      "variants": []
+    },
+    {
+      "id": "repair",
+      "title": "Repair authority is still outstanding",
+      "kind": "DIARY",
+      "from": "Repair coordinator · Current review",
+      "unlock": 5,
+      "body": "Repair authority has been requested. Two calendar days later the repairer still has no response.\n\nThe original module’s reference timeline places these events on Day 6 and Day 8. Your game day may differ because of earlier choices.\n\nParts: boot floor section requires a supplier update. A two-day lead-time concern is under investigation.\n\nThe repairer needs a named decision maker, a clear authority position and a review date. Waiting another week adds seven simulated hire days.",
+      "variants": [
+        {
+          "flag": "repairs",
+          "body": "Your repair enquiry obtained the authority request and the parts order log. Authority remains outstanding two days after the request.\n\nThe repairer can progress once authority is resolved. A boot floor section has a two-day lead-time concern; check causation and available alternatives before alleging avoidable delay.\n\nYou have contact details for the authority owner and repairer, enabling a same-day chase and a dated review."
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "title": "Financial circumstances enquiry",
+      "kind": "STATEMENT",
+      "from": "Alex Morgan · Financial position",
+      "unlock": 6,
+      "body": "“I couldn’t afford to hire a vehicle myself.”\n\nInitial information: current account balance £420; employed and paid monthly. This snapshot alone does not establish affordability.\n\nPotential evidence: relevant accounts, savings, available credit, income, essential commitments and the likely conventional-hire cost at the material time. Consider access to funds without unreasonable sacrifice.\n\nExplain relevance, request a proportionate period and use a secure route. Do not ask learners to enter real financial or personal data into this prototype.",
+      "variants": []
+    },
+    {
+      "id": "finance-result",
+      "title": "Financial evidence review",
+      "kind": "REVIEW",
+      "from": "Technical handler · Scenario evidence",
+      "unlock": 7,
+      "body": "The financial material requested is incomplete or too narrow. The £420 balance alone cannot determine impecuniosity.\n\nFor the rate-comparison exercise, assume provisionally that impecuniosity is not established. This is a training assumption, not a finding supported by your enquiries. At negotiation you must reopen this evidence gap.",
+      "variants": [
+        {
+          "flag": "finance",
+          "body": "A proportionate secure enquiry obtained relevant account information, savings access, available credit, income and essential commitments for the material period.\n\nScenario finding: when the full circumstances are considered, Alex is not relying successfully on impecuniosity. This is a stipulated fact for this fictional exercise; it is not a formula based on a single balance.\n\nProceed to assess comparable basic hire rate evidence alongside the other issues."
+        }
+      ]
+    },
+    {
+      "id": "rates",
+      "title": "Four basic hire rate reports",
+      "kind": "RATE PACK",
+      "from": "Independent rental evidence · Fictional suppliers",
+      "unlock": 7,
+      "body": "REPORT 1 — £58/day\nManual; collected nine months after the accident; 14-day rental; no proof of relevant-date availability. Weak comparator.\n\nREPORT 2 — £89/day\nAutomatic, equivalent class, mainstream supplier, contemporaneous local availability; relevant hire duration. Excess and waiver terms need comparison with Report 3.\n\nREPORT 3 — £110/day\nAutomatic, equivalent class, relevant dates and duration, local availability, unlimited mileage and zero excess. Consider the extra cover and whether it is reasonably required.\n\nREPORT 4 — £145/day\nPremium supplier; airport collection. Evidence does not establish practical local availability or collection feasibility.\n\nAll figures are fictional, treated consistently as inclusive daily figures. Reports 2 and 3 are useful evidence; neither is automatically the recoverable rate. Compare class, date, place, duration, availability, excess, mileage and additional products.",
+      "variants": []
+    },
+    {
+      "id": "invoice",
+      "title": "Closing hire schedule",
+      "kind": "INVOICE",
+      "from": "Northway Mobility · End of hire",
+      "unlock": 8,
+      "body": "HIRE ENDS ON SIMULATED DAY {{day}}\nDaily rate: £295\nHire subtotal: {{hire}}\nDelivery / collection: £120\nAdditional waiver: £270\nTotal submitted: {{total}}\n\nThe reference run ends at 27 days: £7,965 hire plus £390 additional charges = £8,355. Delayed routes extend the simulated period.\n\nRepair completion and collection have now been confirmed. Review any disputed days against the actual logs; an initial 18-working-day estimate is not proof of the final period.\n\nThe invoice is the amount claimed, not the agreed recoverable amount.",
+      "variants": []
+    },
+    {
+      "id": "negotiation",
+      "title": "Negotiation briefing",
+      "kind": "BRIEF",
+      "from": "Your technical colleague",
+      "unlock": 8,
+      "body": "The file contains unresolved gaps. Avoid a blanket refusal or an unsupported percentage reduction.\n\nNeed and type: assess the claimant statement and vehicle requirements.\nPeriod and repair delay: investigate logs and causation before rejecting days.\nRate: challenge with comparable evidence.\nImpecuniosity: do not treat an incomplete enquiry as a concluded finding.\nExtras: investigate terms, necessity and duplication.\nIntervention: investigate adequacy, receipt and response.\n\nThe allocation exercise uses a technical review of the complete evidence pack. Your coaching report also retains what you actually did.",
+      "variants": [
+        {
+          "flag": "finance",
+          "body": "The financial review supports the scenario assumption that impecuniosity is not established.\n\nThe claimant statement supports need and the described vehicle characteristics support a reasonable replacement type. Accept those in principle, subject to the recorded facts.\n\nChallenge the claimed credit rate using comparable BHR evidence. Investigate the period, repair delay, additional charges and the significance of any intervention before quantifying an offer.\n\nAn adequately documented offer is relevant evidence, not an automatic defence."
+        }
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "id": "first",
+      "phase": "First notification",
+      "title": "The hire has started. Where do you start?",
+      "prompt": "Your policyholder appears primarily responsible. The CHO wants a liability response. Establish the claim while mobility and repair enquiries run in parallel.",
+      "type": "choice",
+      "days": 1,
+      "xp": 40,
+      "docs": [
+        "fnol",
+        "cho"
+      ],
+      "options": [
+        {
+          "id": "rate",
+          "label": "Dispute the £295 daily rate immediately.",
+          "score": [
+            -5,
+            0,
+            0,
+            -5,
+            -5
+          ],
+          "quality": 0.25,
+          "feedback": "A rate challenge alone leaves liability, need and repair progress unanswered. The missed initial enquiries create two extra days.",
+          "extraDays": 2,
+          "flags": []
+        },
+        {
+          "id": "investigate",
+          "label": "Contact the policyholder, investigate liability and establish the claimant’s mobility requirements.",
+          "score": [
+            15,
+            10,
+            5,
+            10,
+            5
+          ],
+          "quality": 1,
+          "feedback": "Good first move. You investigate the underlying claim and mobility needs before committing to a rate position.",
+          "extraDays": 0,
+          "flags": [
+            "investigated"
+          ]
+        },
+        {
+          "id": "refuse",
+          "label": "Tell the CHO that the insurer will not pay credit hire.",
+          "score": [
+            -15,
+            -5,
+            -15,
+            -5,
+            -10
+          ],
+          "quality": 0,
+          "feedback": "A blanket refusal does not assess recoverability and damages the customer relationship. Early enquiries are lost.",
+          "extraDays": 3,
+          "flags": []
+        },
+        {
+          "id": "wait",
+          "label": "Wait for liability to be resolved before taking any action on hire.",
+          "score": [
+            -5,
+            -10,
+            -5,
+            -10,
+            -5
+          ],
+          "quality": 0.1,
+          "feedback": "Liability and mobility enquiries can proceed in parallel without conceding the entire claim. Waiting creates avoidable exposure.",
+          "extraDays": 3,
+          "flags": []
+        }
+      ]
+    },
+    {
+      "id": "need",
+      "phase": "Establishing need",
+      "title": "A second car. A simple answer?",
+      "prompt": "Alex commutes five days a week. His spouse uses the household’s other car for work and school journeys. Decide how to assess need.",
+      "type": "choice",
+      "days": 0,
+      "xp": 35,
+      "docs": [
+        "need"
+      ],
+      "options": [
+        {
+          "id": "none",
+          "label": "Reject need because there is another car in the household.",
+          "score": [
+            -10,
+            -5,
+            -15,
+            0,
+            -10
+          ],
+          "quality": 0,
+          "feedback": "Ownership is not practical availability. Establish who needs each car, when and for what purpose.",
+          "extraDays": 0,
+          "flags": []
+        },
+        {
+          "id": "automatic",
+          "label": "Accept need automatically because Alex normally drives to work.",
+          "score": [
+            0,
+            0,
+            5,
+            0,
+            -5
+          ],
+          "quality": 0.35,
+          "feedback": "Commuting is relevant, but you still need evidence of practical alternatives and competing household requirements.",
+          "extraDays": 0,
+          "flags": []
+        },
+        {
+          "id": "practical",
+          "label": "Establish when the second car is practically available and the needs of both household members.",
+          "score": [
+            10,
+            5,
+            10,
+            5,
+            10
+          ],
+          "quality": 1,
+          "feedback": "You distinguish household ownership from reasonable availability and document the practical conflict.",
+          "extraDays": 0,
+          "flags": [
+            "need"
+          ]
+        },
+        {
+          "id": "agreement",
+          "label": "Treat need as irrelevant because the hire agreement is signed.",
+          "score": [
+            -10,
+            -5,
+            -5,
+            -5,
+            -10
+          ],
+          "quality": 0,
+          "feedback": "The agreement does not resolve whether replacement mobility was reasonably required.",
+          "extraDays": 0,
+          "flags": []
+        }
+      ]
+    },
+    {
+      "id": "type",
+      "phase": "Vehicle equivalence",
+      "title": "Look beyond the badge.",
+      "prompt": "Alex’s 320d automatic has been replaced by a 330i automatic. Which approach gives you a defensible position?",
+      "type": "choice",
+      "days": 0,
+      "xp": 30,
+      "docs": [
+        "type"
+      ],
+      "options": [
+        {
+          "id": "badge",
+          "label": "Accept the class solely because both are BMW 3 Series.",
+          "score": [
+            0,
+            0,
+            0,
+            0,
+            -5
+          ],
+          "quality": 0.3,
+          "feedback": "The badge is a starting point, not a reasoned equivalence assessment.",
+          "extraDays": 0,
+          "flags": []
+        },
+        {
+          "id": "reject",
+          "label": "Reject the whole hire claim because the engine is larger.",
+          "score": [
+            -10,
+            -5,
+            -15,
+            0,
+            -5
+          ],
+          "quality": 0,
+          "feedback": "A model difference alone does not justify rejecting the whole mobility claim.",
+          "extraDays": 0,
+          "flags": []
+        },
+        {
+          "id": "needs",
+          "label": "Check transmission, capacity, luggage and particular needs against available equivalents.",
+          "score": [
+            10,
+            5,
+            10,
+            5,
+            10
+          ],
+          "quality": 1,
+          "feedback": "Reasonable characteristics matter more than the model badge or the cheapest advertised vehicle.",
+          "extraDays": 0,
+          "flags": [
+            "type"
+          ]
+        },
+        {
+          "id": "cheap",
+          "label": "Require Alex to take the cheapest car, regardless of specification.",
+          "score": [
+            -10,
+            0,
+            -15,
+            0,
+            -5
+          ],
+          "quality": 0,
+          "feedback": "Cost control still needs an appropriate replacement that meets evidenced requirements.",
+          "extraDays": 0,
+          "flags": []
+        }
+      ]
+    },
+    {
+      "id": "intervention",
+      "phase": "Intervention",
+      "title": "Make the £72 alternative meaningful.",
+      "prompt": "An appropriate insurer-funded automatic is available. Alex is unrepresented in this exercise. Decide how to communicate the offer.",
+      "type": "choice",
+      "days": 1,
+      "xp": 55,
+      "docs": [
+        "offer"
+      ],
+      "options": [
+        {
+          "id": "nothing",
+          "label": "Leave the current arrangement alone.",
+          "score": [
+            0,
+            -10,
+            -5,
+            -10,
+            0
+          ],
+          "quality": 0,
+          "feedback": "No meaningful offer reaches Alex. The simulation adds three days before the next repair review.",
+          "extraDays": 3,
+          "flags": []
+        },
+        {
+          "id": "specific",
+          "label": "Explain the specific vehicle, terms and delivery; confirm in writing and document the response.",
+          "score": [
+            5,
+            20,
+            10,
+            15,
+            10
+          ],
+          "quality": 1,
+          "feedback": "Alex understands the offer but seeks CHO advice before switching. Hire continues. Preserve the offer and reasons for any refusal; do not assume a complete defence.",
+          "extraDays": 0,
+          "flags": [
+            "intervention"
+          ]
+        },
+        {
+          "id": "letter",
+          "label": "Send a generic “we can provide a car” letter only.",
+          "score": [
+            -5,
+            -5,
+            0,
+            -5,
+            -5
+          ],
+          "quality": 0.3,
+          "feedback": "A vague offer leaves suitability, terms and receipt unclear. Follow-up is delayed by three simulated days.",
+          "extraDays": 3,
+          "flags": []
+        },
+        {
+          "id": "demand",
+          "label": "Demand that the CHO terminates hire immediately.",
+          "score": [
+            -10,
+            -5,
+            -15,
+            -5,
+            -10
+          ],
+          "quality": 0,
+          "feedback": "A demand does not provide suitable mobility or prove unreasonable conduct. Three days pass without an effective offer.",
+          "extraDays": 3,
+          "flags": []
+        }
+      ]
+    },
+    {
+      "id": "engineer",
+      "phase": "Repair strategy",
+      "title": "An estimate is not a timeline.",
+      "prompt": "Repairs are estimated at £11,800 against a value of £18,500, taking 18 working days. Select every enquiry that helps establish the repair and hire period.",
+      "type": "multi",
+      "days": 3,
+      "xp": 35,
+      "docs": [
+        "engineer",
+        "offer-response"
+      ],
+      "options": [
+        {
+          "id": "start",
+          "label": "Actual start date, repair authority and who owns the next action."
+        },
+        {
+          "id": "parts",
+          "label": "Parts availability, lead times and practical alternatives."
+        },
+        {
+          "id": "monitor",
+          "label": "Dated progress updates, completion and collection arrangements."
+        },
+        {
+          "id": "economics",
+          "label": "Repair economics and whether the repair / total-loss decision needs review."
+        },
+        {
+          "id": "automatic",
+          "label": "Treat 18 working days as automatically recoverable, regardless of events."
+        },
+        {
+          "id": "cutoff",
+          "label": "Impose an arbitrary seven-day hire cap."
+        }
+      ],
+      "correct": [
+        "start",
+        "parts",
+        "monitor",
+        "economics"
+      ],
+      "flag": "repairs",
+      "missDelay": 2,
+      "feedback": "Check authority, actual start, parts and progress, and reassess repair economics where needed. Neither a quoted repair duration nor an arbitrary cap establishes the reasonable hire period."
+    },
+    {
+      "id": "delay",
+      "phase": "Period control",
+      "title": "Authority requested. Still no response.",
+      "prompt": "The repairer has waited two days for authority. There is also a parts lead-time concern. What do you do at this review?",
+      "type": "choice",
+      "days": 2,
+      "xp": 40,
+      "docs": [
+        "repair"
+      ],
+      "options": [
+        {
+          "id": "chase",
+          "label": "Contact the authority owner and repairer now; resolve the blocker, update Alex and set a dated review.",
+          "score": [
+            5,
+            15,
+            10,
+            15,
+            10
+          ],
+          "quality": 1,
+          "feedback": "You act on the controllable blocker and preserve the chronology. Investigate parts delay separately rather than assuming all delay is unreasonable.",
+          "extraDays": 0,
+          "flags": [
+            "chased"
+          ]
+        },
+        {
+          "id": "week",
+          "label": "Diary the file for next week.",
+          "score": [
+            0,
+            -10,
+            -5,
+            -15,
+            -5
+          ],
+          "quality": 0.1,
+          "feedback": "Seven extra simulated hire days pass: £2,065 at this rate. A diary entry needs an appropriate interval and a clear action.",
+          "extraDays": 7,
+          "flags": []
+        },
+        {
+          "id": "claimant",
+          "label": "Ask Alex to chase and leave the file with him.",
+          "score": [
+            -5,
+            -5,
+            -10,
+            -5,
+            0
+          ],
+          "quality": 0.25,
+          "feedback": "A claimant update can help, but it does not replace contacting the party controlling authority. Four extra simulated days pass.",
+          "extraDays": 4,
+          "flags": []
+        },
+        {
+          "id": "cancel",
+          "label": "Tell Alex hire must end today, even though the car is not ready.",
+          "score": [
+            -15,
+            0,
+            -20,
+            0,
+            -5
+          ],
+          "quality": 0,
+          "feedback": "Ending mobility arbitrarily does not resolve repair authority. Two extra simulated days pass while the problem remains unresolved.",
+          "extraDays": 2,
+          "flags": []
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "phase": "Financial evidence",
+      "title": "“I couldn’t afford to hire it myself.”",
+      "prompt": "Choose a proportionate enquiry. The initial account balance is a clue, not a complete affordability assessment.",
+      "type": "choice",
+      "days": 2,
+      "xp": 45,
+      "docs": [
+        "finance"
+      ],
+      "options": [
+        {
+          "id": "bank",
+          "label": "Request one current bank statement and decide from its closing balance.",
+          "score": [
+            -5,
+            0,
+            0,
+            0,
+            -5
+          ],
+          "quality": 0.3,
+          "feedback": "A single balance can miss savings, accessible credit and essential commitments. The evidence gap remains.",
+          "extraDays": 0,
+          "flags": []
+        },
+        {
+          "id": "pay",
+          "label": "Request payslips only.",
+          "score": [
+            -5,
+            0,
+            0,
+            0,
+            -5
+          ],
+          "quality": 0.25,
+          "feedback": "Income alone does not establish access to funds or the sacrifices required to pay for conventional hire.",
+          "extraDays": 0,
+          "flags": []
+        },
+        {
+          "id": "proportionate",
+          "label": "Explain relevance and securely request proportionate evidence of funds, credit and essential commitments at the material time.",
+          "score": [
+            10,
+            5,
+            10,
+            5,
+            15
+          ],
+          "quality": 1,
+          "feedback": "The review can consider affordability in context. For this scenario, the complete evidence does not support impecuniosity.",
+          "extraDays": 0,
+          "flags": [
+            "finance"
+          ]
+        },
+        {
+          "id": "irrelevant",
+          "label": "Request nothing; financial circumstances cannot affect the rate analysis.",
+          "score": [
+            -15,
+            -5,
+            0,
+            0,
+            -15
+          ],
+          "quality": 0,
+          "feedback": "Financial circumstances can materially affect recoverability. You have left a central issue unresolved.",
+          "extraDays": 0,
+          "flags": []
+        }
+      ]
+    },
+    {
+      "id": "bhr",
+      "phase": "Basic hire rate",
+      "title": "Useful evidence beats the lowest number.",
+      "prompt": "Select the two reports that offer useful comparable evidence. Read the terms; do not simply choose a price. Time advances to the confirmed end of hire after this review.",
+      "type": "multi",
+      "days": 17,
+      "xp": 50,
+      "docs": [
+        "finance-result",
+        "rates"
+      ],
+      "options": [
+        {
+          "id": "r1",
+          "label": "Report 1 · £58/day · manual, nine months later, availability unproven."
+        },
+        {
+          "id": "r2",
+          "label": "Report 2 · £89/day · equivalent automatic, contemporaneous local evidence."
+        },
+        {
+          "id": "r3",
+          "label": "Report 3 · £110/day · equivalent automatic, relevant period, zero excess."
+        },
+        {
+          "id": "r4",
+          "label": "Report 4 · £145/day · premium airport supplier, practical availability unproven."
+        }
+      ],
+      "correct": [
+        "r2",
+        "r3"
+      ],
+      "flag": "rates",
+      "feedback": "Reports 2 and 3 provide useful comparisons. Analyse excess, mileage and additional products before deciding how each informs the rate. Reports 1 and 4 have material comparability gaps. A lower price is not enough."
+    },
+    {
+      "id": "strategy",
+      "phase": "Negotiation",
+      "title": "Build the position, issue by issue.",
+      "prompt": "Hire has ended. Allocate each issue using the full technical evidence pack. “Accept” means accept in principle on these facts; “Investigate” means the evidence does not yet justify a firm challenge.",
+      "type": "allocation",
+      "days": 0,
+      "xp": 45,
+      "docs": [
+        "invoice",
+        "negotiation"
+      ],
+      "issues": [
+        {
+          "id": "need",
+          "label": "Need for replacement mobility",
+          "answer": "Accept"
+        },
+        {
+          "id": "type",
+          "label": "Reasonable vehicle characteristics",
+          "answer": "Accept"
+        },
+        {
+          "id": "period",
+          "label": "Hire duration and disputed days",
+          "answer": "Investigate"
+        },
+        {
+          "id": "rate",
+          "label": "The claimed £295 daily credit rate",
+          "answer": "Challenge"
+        },
+        {
+          "id": "finance",
+          "label": "Impecuniosity assertion",
+          "answer": "Investigate"
+        },
+        {
+          "id": "extras",
+          "label": "Delivery, collection and waiver",
+          "answer": "Investigate"
+        },
+        {
+          "id": "delay",
+          "label": "Repair and parts delay",
+          "answer": "Investigate"
+        },
+        {
+          "id": "mitigation",
+          "label": "Effect of the intervention offer",
+          "answer": "Investigate"
+        }
+      ],
+      "feedback": "Accept evidenced need and reasonable vehicle characteristics in principle. Challenge the credit rate with comparable evidence. Investigate period, extras, delay and the offer’s effect. Reassess the financial assertion against the full review: the scenario assumes it is not established, but missing enquiries on your route must be repaired."
+    },
+    {
+      "id": "note",
+      "phase": "Final strategy",
+      "title": "Leave a file someone else can defend.",
+      "prompt": "Write 30–150 words explaining your position and next action. Cover need, period, type, rate, financial circumstances and intervention. Include why the evidence supports your approach.",
+      "type": "note",
+      "days": 0,
+      "xp": 75,
+      "docs": [
+        "invoice",
+        "negotiation",
+        "finance-result"
+      ],
+      "rubric": [
+        {
+          "id": "need",
+          "label": "Need",
+          "terms": [
+            "need",
+            "commut",
+            "household"
+          ]
+        },
+        {
+          "id": "period",
+          "label": "Period",
+          "terms": [
+            "period",
+            "duration",
+            "delay",
+            "days"
+          ]
+        },
+        {
+          "id": "type",
+          "label": "Type",
+          "terms": [
+            "type",
+            "automatic",
+            "equivalent",
+            "vehicle class"
+          ]
+        },
+        {
+          "id": "rate",
+          "label": "Rate",
+          "terms": [
+            "rate",
+            "bhr",
+            "£89",
+            "£110"
+          ]
+        },
+        {
+          "id": "finance",
+          "label": "Impecuniosity",
+          "terms": [
+            "impecun",
+            "financial",
+            "afford"
+          ]
+        },
+        {
+          "id": "mitigation",
+          "label": "Intervention",
+          "terms": [
+            "offer",
+            "intervention",
+            "mitigat"
+          ]
+        },
+        {
+          "id": "next",
+          "label": "Next action",
+          "terms": [
+            "next",
+            "request",
+            "review",
+            "negotiate",
+            "refer",
+            "obtain"
+          ]
+        }
+      ],
+      "feedback": "Topic coverage is an aid to reflection, not automated legal judgement."
+    }
+  ],
+  "modelNote": "Need is supported by commuting and the household’s competing use. The automatic replacement appears reasonable in type. Review repair, parts and collection logs before agreeing the period or rejecting delay. Assess comparable BHR reports at £89 and £110, including excess and terms, rather than choosing the cheapest rate. The full financial review does not establish impecuniosity in this scenario; complete any missing enquiries on my route. Preserve the specific intervention offer and the claimant’s response without treating refusal as an automatic defence. Next, obtain evidence for extras and disputed days, update the reserve and negotiate a reasoned position with a dated review.",
+  "coaching": [
+    "What information would change your decision?",
+    "Which delay was controllable, and who owned the next action?",
+    "What assumptions still need evidence?",
+    "How would you explain the proposed next step to Alex?"
+  ],
+  "sources": [
+    {
+      "title": "Original module: Gamify Claims Learning",
+      "url": "chatgpt-conversation://6abbff62-79cc-83eb-b4c8-1e95268b917c"
+    },
+    {
+      "title": "CPR Practice Direction 16, paragraph 6.3",
+      "url": "https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part16/pd_part16"
+    },
+    {
+      "title": "Lagden v O’Connor [2003] UKHL 64",
+      "url": "https://publications.parliament.uk/pa/ld200304/ldjudgmt/jd031204/lagden-1.htm"
+    },
+    {
+      "title": "Stevens v Equity Syndicate Management [2015] EWCA Civ 93 (judgment)",
+      "url": "https://www.credithirebarrister.com/wp-content/uploads/2017/03/Stevens-v-Equity-Syndicate-Management-Limited-2015-EWCA-Civ-93.pdf"
+    }
+  ]
+}
